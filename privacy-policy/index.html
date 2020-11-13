@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,24 @@
 </head>
 
 <style>
-    .current{
+    .current {
         font-size: 1.05rem;
         font-weight: bold;
     }
 </style>
+
 <body>
     <nav class="navbar">
         <div class="logo">
-            web beast
+            <a href="/">web beast</a>
         </div class="side_list">
         <div>
             <ul>
-                <li class="current">
-                    <a href="index.html">Privacy Policy</a>
+                <li class="current active-link">
+                    <a href="/privacy-policy/">Privacy Policy Generator</a>
                 </li>
-                <li>
-                    Disclaimer
+                <li class="active-link">
+                    <a href="#">Disclaimer Generator</a>
                 </li>
                 <!-- <li>
                     Privacy Policy
@@ -40,23 +42,29 @@
 
 
 
-<div class="heading">
-    <h1>Privacy Policy Generator</h1>
-</div>
 
-<main class="my-body">
-    <div>
-        <button>Generate</button>
-    </div>
+    <h1 class="hero-heading">
+        <span class="i-am">Web Beast </span>
+        <span class="txt-type" data-wait="3000" data-words='["Privacy Policy Generator", "Privacy Policy Generator" ] '></span>
+    </h1>
 
-    <div>
-        <p>
-            This tool Generates Privacy policy for your website in 1 click.
-        </p>
-    </div>
-</main>
+    <main class="my-body">
+        <div>
+            <p>
+                This tool Generates Privacy policy for your website in 1 click.
+            </p>
+        </div>
+        <div class="hero-button">
+            <a href="#Generate">Generate</a>
+
+        </div>
 
 
-    
+    </main>
+
+
+
 </body>
+<script src="../main.js"></script>
+
 </html>
