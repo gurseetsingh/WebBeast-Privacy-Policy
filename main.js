@@ -75,3 +75,19 @@ hero_buttons.forEach(btn => {
         }, 1000);
     })
 })
+
+
+// Generating privacy policy for the user using inputs
+
+const privacy_policy_button = document.getElementById('privacy-policy-button');
+
+privacy_policy_button.addEventListener('click', () => {
+    console.log('you clicked button');
+
+    let site_name = prompt("Enter your site domin, eg: webbeast.org, google.com");
+    console.log(`site_name is ${site_name}`);
+    let site_url = "https://" + site_name;
+    console.log(`site_url is ${site_url}`);
+    let site_email = prompt('Enter your email, eg:contact@webbeast.org, conactwebbest@gmail.com');
+    console.log(`site_email is ${site_email}`);
+});
